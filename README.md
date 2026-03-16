@@ -55,19 +55,48 @@ The Supernova upgrade dropped block times from **6 seconds → 600 milliseconds*
 
 ---
 
-## 🔢 Performance Stats
+## 🏆 Results — March 16, 2026
+
+### Window A · 16:00–16:30 UTC
+
+| Metric | Value |
+|---|---|
+| ⏱ Duration | 30 minutes |
+| 📤 Txs submitted | **2,674,112** |
+| ✅ Txs confirmed on-chain | ~3,600,000 |
+| ⚡ Peak rate | ~9,250 tx/s |
+| 🎯 Milestone crossed | ~8 min in |
+
+### Window B · 17:00–17:30 UTC
+
+| Metric | Value |
+|---|---|
+| ⏱ Duration | 30 minutes |
+| 📤 Txs submitted | **3,878,758** |
+| ⚡ Peak rate | ~9,600 tx/s |
+
+### Combined
+
+```
+Window A   :   2,674,112 txs
+Window B   :   3,878,758 txs
+─────────────────────────────
+Total      :   6,552,870 txs
+Peak rate  :   ~9,600 tx/s
+```
+
+---
+
+## 🔢 Configuration
 
 ```
 Wallets         :   500
 Gas per tx      :   50,000 (minimum — no data field)
 Cost per tx     :   0.00005 EGLD
-Max txs/wallet  :   80,000  (4 EGLD budget)
-Max total txs   :   40,000,000
-Estimated peak  :   ~16,500 tx/s
+Funding/wallet  :   4 EGLD
 Mempool window  :   96 nonces (node limit: 100)
+Batch size      :   100 txs per POST
 ```
-
-> Tested at **~200 tx/s per 3 wallets** in a 60s live run. Extrapolates to 16,500+ tx/s at full 500-wallet scale.
 
 ---
 
